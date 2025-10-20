@@ -1,20 +1,27 @@
+<head>
+  body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1c1c3c, #4a0072, #b388eb);
+  padding: 40px 20px;
+}
+</head>
 <div align="left">
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
     <td width="50%"><form method="POST" name="instantquiz">
       <table border="0" width="100%" cellspacing="0" cellpadding="0">
-        <caption><strong>JavaScript Kit Pop Quiz</strong></caption>
+        <caption><strong>How Well Do You Know the Wizarding World?</strong></caption>
         <tr>
           <td width="100%"><div align="center"><center><p><textarea rows="10" name="thequestion"
           cols="69" wrap="virtual"></textarea></td>
         </tr>
         <tr align="center">
-          <td width="50%"><div align="center"><center><p><strong>Solution: </strong><input
+          <td width="50%"><div align="center"><center><p><strong>Correct Answer: </strong><input
           type="text" name="thesolution" size="35"></td>
         </tr>
         <tr align="center">
-          <td width="100%"><div align="center"><center><p><strong>Your response:</strong> <select
+          <td width="100%"><div align="center"><center><p><strong>Your Response:</strong> <select
           name="theresponse" size="1" onChange="responses()">
             <option value="-----">----</option>
             <option value="a">a</option>
@@ -58,7 +65,7 @@ function responses(){
 var temp2=document.instantquiz.theresponse
 var temp3=temp2.options[temp2.selectedIndex].text
 if (temp3!=solution[whichone]&&temp2.selectedIndex!=0)
-document.instantquiz.thesolution.value="Sorry, the correct answer is "+solution[whichone]
+document.instantquiz.thesolution.value="Bollocks! Try again! "+solution[whichone]
 else if(temp2.selectedIndex!=0)
 document.instantquiz.thesolution.value=compliments[Math.round(Math.random()*compliments.length-1)]
 }
