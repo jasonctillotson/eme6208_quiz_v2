@@ -4,8 +4,10 @@
     body {
       font-family: 'Roboto', sans-serif;
       background: linear-gradient(135deg, yellow, white);
-      url('https://cdn.mos.cms.futurecdn.net/NgKvu8G2coskQXj74MoKcE-1280-80.jpg') no-repeat center center;
       padding: 40px 20px;
+      <img src="https://cdn.mos.cms.futurecdn.net/NgKvu8G2coskQXj74MoKcE-1280-80.jpg" 
+     alt="Quiz Image" 
+     style="width:100%; max-width:400px; display:block; margin:20px auto; border-radius:10px;">
     }
   </style>
 </head>
@@ -39,7 +41,9 @@
           value="Next&gt;&gt;" name="B2"
           onClick="if (whichone&lt;=total){whichone++;generatequestions()}"><br>
           <small><a href="#" onClick="whichone=1;generatequestions();return false">Start Over</a> </small><input
-          type="checkbox" name="cmode" value="ON"><small>Cheat Mode</small><p align="center"><font face="arial" size="-2">This free quiz script provided by</font><br> <font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript Kit</a></font></p></td>
+          type="checkbox" name="cmode" value="ON"><small>Cheat Mode</small>
+          <hr style="margin-top: 20px; margin-bottom: 20px; border: 1px solid #999;">
+          <p align="center"><font face="arial" size="-2">This free quiz script provided by</font><br> <font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript Kit</a></font></p></td>
         </tr>
       </table>
     </form>
